@@ -1,1 +1,6 @@
 .idea/
+main/.idea/
+main/db.sqlite3
+main/venv/
+__pycache__/
+

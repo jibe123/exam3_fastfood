@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Main page {% endblock %}
+
+{% block content %}
+<h2>Добро пожаловать в меню нашего фаст-фуда!</h2>
+<h2>Ниже вы можете увидеть список блюд из нашего меню.</h2>
+<h2>Нажмите на блюдо, чтобы увидеть описание и цены.</h2>
+<h3>Наше меню :)</h3>
+<ol type = "1">
+{% for item in menu_all %}
+    <li><a href="/menu/{{item.id}}">{{item}}</a></li>
+    {% endfor %}
+    </ol>
+{% endblock %}
